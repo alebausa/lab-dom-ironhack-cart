@@ -1,14 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="text/javascript" src="./js/index.js"></script>
-  <title>Ironhack cart</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Ironhack cart</title>
+  </head>
+  <body id="body">
+    <div id="wrapper">
+      <h1>Ironhack<br />Merchandising Shop</h1>
+      <!--Product start-->
+      <div class="product" id="product">
+        <div class="product-name">
+          <span class="product-name">
+            IronBubble-head
+          </span>
+        </div>
+        <div class="priceBox">
+          <span class="price">$25.00</span>
+        </div>
+        <div class="quantityDiv">
+          <label>QTY</label>
+          <input type="number" placeholder="0" class="quantity" />
+        </div>
+        <div>
+          <span class="result">$0.00</span>
+        </div>
+        <div class="delete">
+          <button class="btn btn-delete" onclick="deleteItem(event);">
+            Delete
+          </button>
+        </div>
+      </div>
+      <!--Product end-->
+      <!--Product start-->
+      <div class="product">
+        <div class="product-name">
+          <span class="product-name">
+            IronShirt
+          </span>
+        </div>
+        <div class="priceBox">
+          <span class="price">$15.00</span>
+        </div>
+        <div class="quantityDiv">
+          <label>QTY</label>
+          <input type="number" placeholder="0" class="quantity" />
+        </div>
+        <div>
+          <span class="result">$0.00</span>
+        </div>
+        <div class="delete">
+          <button class="btn btn-delete" onclick="deleteItem(event);">
+            Delete
+          </button>
+        </div>
+      </div>
+      <!-- Product end-->
+      <!--Product start-->
+      <div class="product">
+        <div class="product-name">
+          <span class="product-name">
+            IronCup
+          </span>
+        </div>
+        <div class="priceBox">
+          <span class="price">$10.00</span>
+        </div>
+        <div class="quantityDiv">
+          <label>QTY</label>
+          <input type="number" placeholder="0" class="quantity" />
+        </div>
+        <div>
+          <span class="result">$0.00</span>
+        </div>
+        <div class="delete">
+          <button class="btn btn-delete" onclick="deleteItem(event);">
+            Delete
+          </button>
+        </div>
+      </div>
+      <!--Product end-->
+      <!--Product start-->
+      <div class="product">
+        <div class="product-name">
+          <span class="product-name">
+            IronSticker
+          </span>
+        </div>
+        <div class="priceBox">
+          <span class="price">$1.00</span>
+        </div>
+        <div class="quantityDiv">
+          <label>QTY</label>
+          <input type="number" placeholder="0" class="quantity" />
+        </div>
+        <div>
+          <span class="result">$0.00</span>
+        </div>
+        <div class="delete">
+          <button class="btn btn-delete" onclick="deleteItem(event);">
+            Delete
+          </button>
+        </div>
+      </div>
+      <!--Product end-->
+      <!--Product start-->
+      <div class="product">
+        <div class="product-name">
+          <span class="product-name">
+            IronAxe
+          </span>
+        </div>
+        <div class="priceBox">
+          <span class="price">$100.00</span>
+        </div>
+        <div class="quantityDiv">
+          <label>QTY</label>
+          <input type="number" placeholder="0" class="quantity" />
+        </div>
+        <div>
+          <span class="result">$0.00</span>
+        </div>
+        <div class="delete">
+          <button class="btn btn-delete" onclick="deleteItem(event);">
+            Delete
+          </button>
+        </div>
+      </div>
+      <!-- Product end -->
+    </div>
+    <!--Wrapper end-->
+    <!--New product-->
+    <div class="new-product">
+      <div class="product-name">
+        <input
+          class="add-product-name"
+          type="text"
+          placeholder="Your product"
+        />
+      </div>
+      <div class="price">
+        <input id="add-product-price" type="number" placeholder="$10" />
+      </div>
+      <button class="btn btn-create" id="new-item-create">
+        Create
+      </button>
+    </div>
+    <!--New product end-->
+
+    <div id="calc">
+      <button class="btn btn-success" id="calc-price-btn">
+        Calculate Prices
+      </button>
+    </div>
+
+    <section id="total-price"></section>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
 </html>

@@ -25,17 +25,62 @@ input {
 }
 
 .btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
 }
 
 .btn-delete {
-    color: #fff;
-    background-color: #CF000F;
-    border-color: #CF000F;
+  color: #fff;
+  background-color: #cf000f;
+  border-color: #cf000f;
+}
+
+.btn-create {
+  border: 1px solid green;
+  margin-left: 10px;
 }
 
 .quantity {
   margin: 0 5px;
+}
+
+/*********** ADDED STYLES ***********/
+
+.product,
+.new-product,
+#addedProduct {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.new-product {
+  margin-left: 50px;
+}
+
+#calc,
+#total-price {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.product-name,
+.priceBox,
+.quantity,
+.result,
+.delete {
+  width: 20%;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.delete,
+.product {
+  margin-left: 50px;
 }
